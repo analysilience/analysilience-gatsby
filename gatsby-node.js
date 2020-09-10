@@ -28,11 +28,9 @@ exports.createPages = ({ actions, graphql }) => {
       result.errors.forEach((e) => console.error(e.toString()))
       return Promise.reject(result.errors)
     }
-        },
-      }
+        }
     
-  
-
+    
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
