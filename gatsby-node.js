@@ -28,7 +28,7 @@ exports.createPages = ({ actions, graphql }) => {
       result.errors.forEach((e) => console.error(e.toString()))
       return Promise.reject(result.errors)
     }
-        }
+        } )
     
     
 
