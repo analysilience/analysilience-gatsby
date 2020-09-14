@@ -58,5 +58,17 @@ class BlogRoll extends React.Component {
   }
 }
 
+BlogRoll.propTypes = {
+  data: PropTypes.shape({
+    allMarkdownRemark: PropTypes.shape({
+      edges: PropTypes.array,
+    }),
+  }),
+}
 
-
+export default () => (
+  <StaticQuery
+    query={graphql``}
+    render={(data, count) => <BlogRoll data={data} count={count} />}
+  />
+)
