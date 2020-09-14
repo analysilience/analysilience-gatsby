@@ -68,7 +68,8 @@ BlogRoll.propTypes = {
 
 export default () => (
   <StaticQuery
-    query={graphql``}
+    query={graphql`
+      `}
     render={(data, count) => <BlogRoll data={data} count={count} />}
   />
 )
